@@ -1,4 +1,5 @@
-const API = 'https://randomuser.me/api/';
+//de esta manera con webpack dotenv se puede proteger los datos que pueden llegar a ser sencibles.
+const API = process.env.API;
 
 const getData = async (id) => {
   const apiURl = id ? `${API}${id}` : API;
